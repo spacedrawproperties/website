@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <title>Document</title>
+
+
+<!-- CLUSTER CONFIGURATION START -->
+<style>
+
+.container-clust {
+    background: #f7f4f4;
+}    
+
+p {
+    margin-bottom: 10px;
+    line-height: 23px;
+}
+
+img {
+    margin-bottom: 0;
+    max-width: 100% !important;
+}
+
+@media (max-width: 767px) {
+    
+    #carousel-example-generic .carousel-inner>.item>img {
+        margin-top: 0px !important;
+    }
+
+    .nav-logo {
+        max-width: 92px !important;
+    }
+}
+
+#carousel-example-generic .carousel-inner>.item>img {
+    width: 100% !important;
+    /* margin-top: 70px; */
+}
+
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none !important;
+    filter: alpha(opacity=50);
+    opacity: 1;
+}
+
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+    margin-left: -100px;
+    color: #a59fa0;
+    opacity: 1;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+    margin-right: -100px;
+    /* margin-left: -10px; */
+    color: #a59fa0;
+    opacity: 1;
+}
+
+
+
+
+/*------------Amenities----*/
+
+figure.snip1477 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    /* min-width: 391px; */
+    /* max-width: 451px; */
+    /* width: 100%; */
+    /* color: #ffffff; */
+    text-align: center;
+    /* font-size: 16px; */
+    /* background-color: #000000; */
+}
+
+figure.snip1477 *,
+figure.snip1477 *:before,
+figure.snip1477 *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+}
+
+figure.snip1477 img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+    opacity: 0.9;
+}
+
+figure.snip1477 .title {
+    position: absolute;
+    top: 58%;
+    left: 25px;
+    padding: 5px 10px 10px;
+}
+
+figure.snip1477 .title:before,
+figure.snip1477 .title:after {
+    height: 2px;
+    width: 400px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+}
+
+figure.snip1477 .title:before {
+    top: 0;
+    left: 10px;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+figure.snip1477 .title:after {
+    bottom: 0;
+    right: 10px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+figure.snip1477 .title div:before,
+figure.snip1477 .title div:after {
+    width: 2px;
+    height: 300px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+}
+
+figure.snip1477 .title div:before {
+    top: 10px;
+    right: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+figure.snip1477 .title div:after {
+    bottom: 10px;
+    left: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+figure.snip1477 h2,
+figure.snip1477 h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+figure.snip1477 h2 {
+    font-weight: 400;
+}
+
+figure.snip1477 h4 {
+    display: block;
+    font-weight: 700;
+    background-color: #eadde6;
+    padding: 5px 10px;
+    color: #000000;
+}
+
+figure.snip1477 figcaption {
+    position: absolute;
+    bottom: 42%;
+    left: 25px;
+    text-align: left;
+    opacity: 0;
+    padding: 5px 60px 5px 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+figure.snip1477 figcaption p {
+    margin: 0;
+}
+
+figure.snip1477 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+figure.snip1477 img,
+figure.snip1477 img {
+    zoom: 1;
+    filter: alpha(opacity=35);
+}
+
+figure.snip1477 .title:before,
+figure.snip1477 .title:before,
+figure.snip1477 .title:after,
+figure.snip1477 .title:after,
+figure.snip1477 .title div:before,
+figure.snip1477 .title div:before,
+figure.snip1477 .title div:after,
+figure.snip1477 .title div:after {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+figure.snip1477 .title:before,
+figure.snip1477 .title:before,
+figure.snip1477 .title:after,
+figure.snip1477 .title:after {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+figure.snip1477:hover figcaption,
+figure.snip1477.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    font-size: 25px !important;
+    border: 2px solid !important;
+    height: 40px;
+    width: 40px;
+    border-radius: 50% !important;
+    outline: none !important;
+    transition: ease all 0.5s;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    font-size: 25px !important;
+    border: 2px solid !important;
+    height: 40px;
+    width: 40px;
+    border-radius: 50% !important;
+    outline: none !important;
+    transition: ease all 0.5s;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover {
+    background: #596169 !important;
+    border-color: #596169 !important;
+    height: 40px;
+    width: 40px;
+}
+
+.owl-carousel .owl-nav .owl-next:hover {
+    background: #596169 !important;
+    border-color: #596169 !important;
+    height: 40px;
+    width: 40px;
+}
+
+
+/*-------------aminities--------*/
+
+.amenities-icon {
+    text-align: center;
+    /*box-shadow: 1px 1px 25px #e0e0e0;*/
+    /*box-shadow: 0 8px 8px -6px rgba(0, 0, 0, 0.2);*/
+    /*background: #f7f7f7;*/
+    margin-bottom: 30px;
+    transition: ease all 0.5s;
+}
+
+.amenities-icon:hover {
+    transform: translateY(-5px);
+    transition: ease all 0.5s;
+}
+
+.amenities-icon .icons-wrap {
+    /* height: 90px;
+    width: 90px; */
+    margin: 0px auto;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease all 0.5s;
+}
+
+
+/* .amenities-icon:hover .icons-wrap {
+    border-radius: 0;
+    border-color: #222;
+    transition: ease all 0.5s;
+    display: inline-block;
+} */
+
+.amenities-icon .icons-wrap img {
+    width: 70px !important;
+    /*border: 1px solid #000;*/
+    /*border-radius: 50%;*/
+    filter: invert(100%) sepia(109%) saturate(2874%) hue-rotate(3deg) brightness(3%) contrast(100%);
+}
+
+.amenities-icon h3 {
+    font-size: 13px;
+    transition: ease all 0.5s;
+    color: #222;
+    /* min-height: 28px; */
+}
+
+.amenities-icon:hover h3 {
+    color: #222;
+    transition: ease all 0.5s;
+}
+
+
+
+/*---------------Gallery style 3-----------------------*/
+
+.gall-pd {
+    padding: 0 5px !important;
+}
+
+.gallery-type3 {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.gallery-type3 .gallimg {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-type3 .galloverlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 13px;
+}
+
+.gallery-type3 .galloverlay:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #fff;
+    left: 0;
+    top: 0;
+    transform: scale(0.95);
+    z-index: 9;
+}
+
+.gallery-type3 .gallimg img {
+    width: 100%;
+    display: block;
+    transition: ease all 0.5s;
+}
+
+.gallery-type3 .galltxt3 {
+    background: #000;
+    text-align: center;
+    padding: 6px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    transition: ease all 0.5s;
+    padding-bottom: 10px;
+}
+
+.gallery-type3 .galltxt3 p {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    font-size: 14px;
+}
+
+.gallery-type3 .galldots {
+    width: 90px;
+    margin: 0 auto;
+}
+
+.gallery-type3 .galldots li {
+    width: 30px;
+    height: 30px;
+    margin-right: -16px;
+}
+
+.gallery-type3:hover {
+    cursor: url(../images/hovericon.png), auto !important;
+}
+
+.gallery-type3:focus .galltxt3 {
+    bottom: -75px;
+    transition: ease all 0.5s;
+    padding-bottom: 0;
+}
+
+.gallery-type3:focus .gallimg img {
+    transition: ease all 0.5s;
+    transform: scale(1);
+}
+
+.gallery-type3:hover .galltxt3 {
+    bottom: 0px;
+    transition: ease all 0.5s;
+    padding-bottom: 10px;
+}
+
+.gallery-type3:hover .gallimg img {
+    transition: ease all 0.5s;
+    transform: scale(1.2);
+}
+
+
+
+.amenities-gallery .actual {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 10px 2px 10px;
+    z-index: 99;
+}
+
+.overlayg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    /* z-index: 99; */
+}
+
+.overlayg::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 2px dashed #fff;
+    transform: scale(0.975);
+    /* z-index: 99; */
+}
+
+.amenities-gallery {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 8px -6px rgba(0, 0, 0, 0.5);
+}
+
+.amenities-gallery img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+    min-height: 265px;
+    margin*bo: 5;
+}
+
+.ami-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.7);
+    position: absolute;
+    top: 0;
+    transform: translate(-101%, 0);
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.amenities-gallery:hover img {
+    transform: scale(1.19);
+    transition: all 0.5s;
+}
+
+.amenities-gallery:hover .ami-overlay {
+    transform: translate(0%, 0);
+    transition: all 0.5s;
+    cursor: url(../images/hovericon.png), auto !important;
+}
+
+.amenities-gallery .ami-overlay h3 {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+/*-----------------------*/
+
+
+/*.ami-carousel .owl-nav{*/
+
+
+/*display: block !important;*/
+
+
+/*}*/
+
+
+@media screen and (max-width:768px) {
+    .ami-iconholder {
+        background: #ffffff;
+        text-align: center;
+        padding: 10px 10px;
+        position: relative;
+        height: 185px;
+        margin-top: 30px;
+        transition: ease all 0.5s;
+        -webkit-box-shadow: 0 10px 8px -6px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 10px 8px -6px rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
+        transform: translateY(-10px);
+        transition: ease all 0.5s;
+    }
+}
+
+.ami-iconholder img {
+    margin-top: 20px;
+    width: 45px;
+    filter: invert(100%) sepia(109%) saturate(2874%) hue-rotate(3deg) brightness(3%) contrast(100%);
+}
+
+.ami-iconholder p {
+    line-height: 19px;
+    margin-top: 5px;
+    font-size: 13px;
+    /* height: 40px; */
+    /* margin-bottom: 0; */
+}
+
+.ami-iconholder:before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 3px solid #010a21;
+    border-left: 3px solid #010a21;
+}
+
+.ami-iconholder:after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #010a21;
+    border-right: 3px solid #010a21;
+}
+
+.ami-iconholder:hover {
+    -webkit-box-shadow: 0 10px 8px -6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 10px 8px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 8px -6px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    transition: ease all 0.5s;
+}
+
+.sub-head2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.counter-holder {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.numtext {
+    font-size: 44px;
+    text-align: center;
+    padding-top: 0px !important;
+    color: #843e1c;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.counter-holder h4 {
+    text-align: center;
+    padding-top: 0px !important;
+    font-size: 11px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.white {
+    color: #ffffff !important;
+}
+
+.head-line.white {
+    background: #fff !important;
+}
+
+.head-line.white3 {
+    background: #596169 !important;
+}
+
+.address-wrap {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.address-wrap h3 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.address-wrap p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.address-wrap .fa {
+    font-size: 30px;
+    margin-right: 7px;
+}
+
+.call-me {
+    font-size: 38px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.call-me:hover {
+    color: #fff;
+}
+
+.rera-sec {
+    padding: 30px 0px;
+    background: #596169;
+    /*background-image: url(../images/BG-1a.jpg);*/
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+.footer-icon {
+    text-align: right;
+}
+
+.footer-sec {
+    /* padding: 20px 0px; */
+    /* background: #febc3c; */
+    color: #fff;
+}
+
+.foote-wrap {
+    margin: 0px auto;
+    display: block;
+}
+
+.foote-wrap img {
+    margin: 0px auto;
+    display: block;
+    width: 122px;
+    margin-top: 10px;
+}
+
+.foote-wrap p {
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 767px) {
+    #selekt-chat-widget {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .download-btn {
+        border: none;
+        border-radius: 0;
+        bottom: 46%;
+        transform: rotate(-90deg);
+        left: initial;
+        right: -70px;
+        margin: 0;
+        z-index: 9999;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #carousel-example-generic {
+        margin-top: 60px;
+    }
+}
+
+
+.prop-img-div img {
+    transition: ease all 1s;
+}
+
+.prop-img-div:hover img {
+    transform: scale(1.3);
+    transition: ease all 1s;
+}
+
+.conf-back {
+    padding: 40px 0 32px;
+    background-color: #eee;
+}
+
+.prop-div,
+.prop-img-div {
+    position: relative;
+    overflow: hidden;
+    transition: ease all 1s;
+}
+
+.prop-img-div {
+    height: 285px;
+}
+
+p.prop-name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: #00000096;
+    padding: 1%;
+    font-weight: 700;
+}
+
+.prop-details .prop-inner:first-child {
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background: linear-gradient(45deg, #7f8091, #85d3d3);
+}
+
+.offer {
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+}
+
+.offer-desc {
+    font-size: 17px;
+    color: #3a3939;
+    font-weight: 600;
+}
+
+p.prop-price {
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    right: 0;
+    color: white;
+    background-color: #00000096;
+    padding: 1%;
+    margin: 0;
+    font-weight: 700;
+}
+
+.prop-price.right {
+    left: initial;
+    right: 0;
+}
+
+.prop-details {
+    padding: 2%;
+    background-color: white;
+    /* height: 323px; */
+}
+
+p.rera {
+    font-size: 12px;
+    color: #88999c;
+    /* border: 2px solid; */
+    /*font-weight: 600;*/
+    padding: 0px 0px;
+    /* width: 410px; */
+    /* margin: 10px auto; */
+    /* height: 38px; */
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.prop-inner {
+    border-bottom: 1px solid lightgray;
+    color: #191919;
+    font-size: 12px;
+}
+
+p.prop-title {
+    float: left;
+}
+
+p.prop-desc {
+    text-align: right;
+}
+
+.prop-div {
+    box-shadow: 2px 2px 11px #999;
+    margin-bottom: 5%;
+}
+
+p.reasons-p {
+    margin-top: 5%;
+    font-size: 13px;
+    text-align: left;
+    line-height: 17px;
+}
+
+.prop-inner .prop-title {
+    margin-bottom: 5px;
+    /*margin-top: 5px;*/
+}
+
+.prop-inner .prop-desc {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.reasons-div {
+    display: inline-flex;
+    margin: 5% 0 0;
+    min-height: 100px;
+}
+
+.sppb-title-heading,
+.resort-discount .sppb-addon-cta .sppb-cta-title {
+    color: #88999c !important;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.sp-page-builder .page-content #section-id-1507611991 {
+    background-color: white;
+}
+
+.clickhere {
+    background-color: #88999c;
+    border: 6px solid #88999c;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.move {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.viewAboutDiv {
+    display: none;
+}
+
+.viewamiDiv {
+    display: none;
+}
+
+.viewAboutDiv2 {
+    display: none;
+}
+
+.viewamiDiv2 {
+    display: none;
+}
+
+.viewAboutDiv3 {
+    display: none;
+}
+
+.viewamiDiv3 {
+    display: none;
+}
+
+.viewAboutDiv4 {
+    display: none;
+}
+
+.viewamiDiv4 {
+    display: none;
+}
+
+.viewAboutDiv5 {
+    display: none;
+}
+
+.viewamiDiv5 {
+    display: none;
+}
+
+.viewAboutDiv6 {
+    display: none;
+}
+
+.viewamiDiv6 {
+    display: none;
+}
+
+.viewAboutDiv7 {
+    display: none;
+}
+
+.viewamiDiv7 {
+    display: none;
+}
+
+.viewAboutDiv8 {
+    display: none;
+}
+
+.viewamiDiv8 {
+    display: none;
+}
+
+.viewAboutDiv9 {
+    display: none;
+}
+
+.viewamiDiv9 {
+    display: none;
+}
+
+.viewAboutDiv10 {
+    display: none;
+}
+
+.viewamiDiv10 {
+    display: none;
+}
+
+.viewAboutDiv11 {
+    display: none;
+}
+
+.viewamiDiv11 {
+    display: none;
+}
+
+.viewAboutDiv12 {
+    display: none;
+}
+
+.viewamiDiv12 {
+    display: none;
+}
+
+.viewAboutDiv13 {
+    display: none;
+}
+
+.viewamiDiv13 {
+    display: none;
+}
+
+.viewAboutDiv14 {
+    display: none;
+}
+
+.viewamiDiv14 {
+    display: none;
+}
+
+.viewAboutDiv15 {
+    display: none;
+}
+
+.viewamiDiv15 {
+    display: none;
+}
+
+.viewAboutDiv16 {
+    display: none;
+}
+
+.viewamiDiv16 {
+    display: none;
+}
+
+.viewAboutDiv17,
+.viewAboutDiv18,
+.viewAboutDiv19,
+.viewAboutDiv20,
+.viewAboutDiv21,
+.viewAboutDiv22,
+.viewAboutDiv23,
+.viewAboutDiv24,
+.viewAboutDiv25,
+.viewAboutDiv26,
+.viewAboutDiv27,
+.viewAboutDiv28,
+.viewAboutDiv29,
+.viewAboutDiv30 {
+    display: none;
+}
+
+.viewamiDiv17,
+.viewamiDiv18,
+.viewamiDiv19,
+.viewamiDiv20,
+.viewamiDiv21,
+.viewamiDiv22,
+.viewamiDiv23,
+.viewamiDiv24,
+.viewamiDiv25,
+.viewamiDiv26,
+.viewamiDiv27,
+.viewamiDiv28,
+.viewamiDiv29,
+.viewamiDiv30 {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .ban-title {
+        padding: 1px 0px;
+        font-size: 8px;
+        margin-top: 60px;
+    }
+}
+
+  </style>
+
+<!-- CLUSTER CONFIGURATION end -->
+
+</head>
+<body>
+
+
+<div class="container-clust">
+
+<div class="container">
+  <h2 class="sppb-title-heading delay-10s  wow fadeInDown  animated cstm-head" style="visibility: visible; animation-name: fadeInDown;color: #88999c!important;">
+      Cluster Configuration</h2>
+
+  <div style="width: 100%;height: 20px"></div>
+  <div class="row">
+
+      <div class="latest-post col-sm-6">
+          <div class="prop-div">
+
+              <a class="move" onclick="pricePopProjectname('Brigade Orchards Ivory');">
+                  <div class="prop-img-div">
+                      <div id="carousel-example-generic2" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                  <img src="images/my/images/1_ivory.jpg" alt="" class="">
+                              </div>
+                          </div>
+
+                      </div>
+                      
+                  </div>
+              </a>
+              <div class="prop-details">
+                  <div class="prop-inner">
+                      <!-- <p class="prop-title offer">
+                                  Offer
+                              </p> -->
+                      <p class="prop-desc offer-desc">
+                        Brigade Orchards Ivory - Rs. 35 Lakh Onwards
+                      </p>
+                  </div>
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          Configuration
+                      </p>
+                      <p class="prop-desc">
+                          1, 2 &amp; 3 BHK
+                      </p>
+                  </div>
+
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          Possession</p>
+                      <p class="prop-desc">
+                          Under Construction
+                      </p>
+                  </div>
+
+                  <div class="prop-inner">
+                      <p class="prop-title"> Amenities </p>
+                      <p class="prop-desc">
+                          <a class="amiLink5 move">view</a>
+                      </p>
+                  </div>
+                  <div class="prop-inner viewamiDiv5">
+                      <p>Sports Complex with indoor &amp; outdoor sports, Swimming Pool, Kids Play Area,
+                          Landscape Island, Outdoor Gymnasium, Jogging Track, Party Lawn, Amphitheatre,
+                          Maze Garden, Skating Rink, Basketball Practice Court, Mini Forest</p>
+                  </div>
+
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          For more details
+                      </p>
+                      <p class="prop-desc">
+                          <a class="move clickhere" onclick="pricePopProjectname('Brigade Orchards Ivory');">click
+                              here</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="latest-post col-sm-6">
+          <div class="prop-div">
+
+              <a class="move" onclick="pricePopProjectname('Brigade Orchards Apartment');">
+                  </a><div class="prop-img-div"><a class="move" onclick="pricePopProjectname('Brigade Orchards Apartment');">
+                      </a><div id="carousel-example-generic2" class="carousel slide carousel-fade" data-ride="carousel"><a class="move" onclick="pricePopProjectname('Brigade Orchards Apartment');">
+                          <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                  <img src="images/my/images/1_orchads.jpg" alt="" class="">
+                              </div>
+                          </div>
+                          </a><a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+
+                          </a>
+                          <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+                          </a>
+                      </div>
+                      
+                  </div>
+              
+              <div class="prop-details">
+                  <div class="prop-inner">
+                      <!-- <p class="prop-title offer">
+                                  Offer
+                              </p> -->
+                      <p class="prop-desc offer-desc">
+                        Brigade Orchards Apartment - Rs. 62 Lakh Onwards
+                      </p>
+                  </div>
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          Configuration
+                      </p>
+                      <p class="prop-desc">
+                          2 &amp; 3 BHK
+                      </p>
+                  </div>
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          Possession</p>
+                      <p class="prop-desc">
+                          Ready to move in
+                      </p>
+                  </div>
+
+                  <div class="prop-inner">
+                      <p class="prop-title"> Amenities </p>
+                      <p class="prop-desc">
+                          <a class="amiLink3 move">view</a>
+                      </p>
+                  </div>
+                  <div class="prop-inner viewamiDiv3">
+                      <p>Swimming Pool - 6 Lane, Indoor Heated Pool, Cricket Ground, Lawn Tennis Courts,
+                          Basketball Court, Volleyball Court, Table Tennis Room, Football Ground,
+                          Billiards/ Snooker Room, Yoga Terrace, Kids Play Areas, Amphitheatre, Cycling
+                          Track Across Township, Convenience Store, Conference Hall, Multi Cuisine
+                          Restaurant, State-of-the-art Gymnasium, Spa For Relaxation, Banquet Space For Up
+                          To 2000 Guests</p>
+                  </div>
+
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          For more details
+                      </p>
+                      <p class="prop-desc">
+                          <a class="move clickhere" onclick="pricePopProjectname('Brigade Orchards Apartment');">click
+                              here</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+  <div class="row">
+      <div class="latest-post col-sm-6">
+          <div class="prop-div">
+
+              <a class="move" onclick="pricePopProjectname('Brigade Orchards Goldspire');">
+                  <div class="prop-img-div">
+                      <div id="carousel-example-generic2" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                  <img src="images/my/images/3_gold.jpg" alt="" class="">
+                              </div>
+                          </div>
+
+                      </div>
+                      
+                  </div>
+              </a>
+              <div class="prop-details">
+                  <div class="prop-inner">
+                      <!-- <p class="prop-title offer">
+                                  Offer
+                              </p> -->
+                      <p class="prop-desc offer-desc">
+                        Brigade Orchards Goldspire - Rs. 45 Lakh Onwards
+                      </p>
+                  </div>
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          Configuration
+                      </p>
+                      <p class="prop-desc">
+                          1.5 &amp; 2 BHK
+                      </p>
+                  </div>
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          Possession</p>
+                      <p class="prop-desc">
+                          New Launch
+                      </p>
+                  </div>
+
+                  <div class="prop-inner">
+                      <p class="prop-title"> Amenities </p>
+                      <p class="prop-desc">
+                          <a class="amiLink6 move">view</a>
+                      </p>
+                  </div>
+                  <div class="prop-inner viewamiDiv6">
+                      <p>Multipurpose Party Area, Indoor games, Library, Yoga / Fitness Terrace, Viewing
+                          Gallery, Barbeque area on the terrace</p>
+                  </div>
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          For more details
+                      </p>
+                      <p class="prop-desc">
+                          <a class="move clickhere" onclick="pricePopProjectname('Brigade Orchards Goldspire');">click
+                              here</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="latest-post col-sm-6">
+          <div class="prop-div">
+
+              <a class="move" onclick="pricePopProjectname('Brigade Orchards Villa');">
+                  <div class="prop-img-div">
+                      <div id="carousel-example-generic2" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                  <img src="images/my/images/4_villa.jpg" alt="" class="">
+                              </div>
+                          </div>
+
+                      </div>
+                      
+                  </div>
+              </a>
+              <div class="prop-details">
+                  <div class="prop-inner">
+                      <!-- <p class="prop-title offer">
+                                  Offer
+                              </p> -->
+                      <p class="prop-desc  offer-desc">
+                        Brigade Orchards Villa - Rs. 4.56 Cr Onwards
+                      </p>
+                  </div>
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          Configuration
+                      </p>
+                      <p class="prop-desc">
+                          4 Bedroom Villas
+                      </p>
+                  </div>
+
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          Possession</p>
+                      <p class="prop-desc">
+                          Ready to move in
+                      </p>
+                  </div>
+
+                  <div class="prop-inner">
+                      <p class="prop-title"> Amenities </p>
+                      <p class="prop-desc">
+                          <a class="amiLink4 move">view</a>
+                      </p>
+                  </div>
+                  <div class="prop-inner viewamiDiv4">
+                      <p>Banquet Space, Gymnasium, Swimming Pool, Indoor Heated Pool, Kids Play Areas,
+                          Amphitheatre, Cycling Track, Cricket Practice Pitches, Basketball Court</p>
+                  </div>
+
+
+                  <div class="prop-inner">
+                      <p class="prop-title">
+                          For more details
+                      </p>
+                      <p class="prop-desc">
+                          <a class="move clickhere" onclick="pricePopProjectname('Brigade Orchards Villa');">click
+                              here</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+  
+
+
+<script>
+  const amiLink4 = document.querySelector(".amiLink4");
+const viewamiDiv4 = document.querySelector(".viewamiDiv4");
+
+amiLink4.addEventListener("click", () => {
+  viewamiDiv4.classList.toggle("visible");
+});
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
