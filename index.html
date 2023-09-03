@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Space Draw Properties</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/my/logos/Logo_SpaceDraw_Transparent_ForWhiteBG.png" type="image/x-icon" />
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colors CSS -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="css/custom.css"> -->
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Set up the links and divs in arrays for easy iteration
+            var linkDivPairs = [
+                { link: document.querySelector(".amiLink3"), div: document.querySelector(".viewamiDiv3") },
+                { link: document.querySelector(".amiLink4"), div: document.querySelector(".viewamiDiv4") },
+                { link: document.querySelector(".amiLink5"), div: document.querySelector(".viewamiDiv5") },
+                { link: document.querySelector(".amiLink6"), div: document.querySelector(".viewamiDiv6") }
+            ];
+        
+            // Initialize by hiding all divs
+            linkDivPairs.forEach(function(pair) {
+                pair.div.style.display = "none";
+            });
+        
+            // Add click event listeners to the links
+            linkDivPairs.forEach(function(pair) {
+                pair.link.addEventListener("click", function(e) {
+                    e.preventDefault(); // Prevent default link behavior
+                    linkDivPairs.forEach(function(otherPair) {
+                        if (pair === otherPair) {
+                            // Toggle the display property for the clicked link's corresponding div
+                            if (pair.div.style.display === "none") {
+                                pair.div.style.display = "block";
+                            } else {
+                                pair.div.style.display = "none";
+                            }
+                        } else {
+                            // Hide other divs
+                            otherPair.div.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+        </script>
+        
+        
+</head>
+<body class="realestate_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <header id ="pg-home" class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand " href="index.html"><img src="images/my/logos/logo_Brigade!SpaceDraw_usethis_smallsize.png" alt="SpaceDrawProperties"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="active" href="#pg-home">Home</a></li>
+                        <li><a href="#pg-about">About us </a></li>
+                        <li><a href="#pg-properties">Properties</a></li>
+                        <li><a href="#pg-virtual">Virtual Site Tour</a></li>
+                        <li><a href="#pg-gallery">Gallery</a></li>                        
+                        <li><a href="#pg-contact">Contact</a></li>
+                        <li class="social-links"><a href="https://twitter.com/spacedrawprop" target="_blank"><i class="fa fa-twitter global-radius"></i></a></li>
+                        <li class="social-links"><a href="#" target="_blank"><i class="fa fa-facebook global-radius"></i></a></li>
+                        <li class="social-links"><a href="#" target="_blank"><i class="fa fa-linkedin global-radius"></i></a></li>
+						<!-- <li class="search-option">
+							<button class="search tran3s dropdown-toggle" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
+							<form action="#" class="p-color-bg dropdown-menu tran3s" aria-labelledby="searchDropdown">
+								<input type="text" placeholder="Search....">
+								<button class="p-color-bg"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</form>
+					   </li>  -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+	
+	<ul class='slideshow'>
+		<li>
+			<span>Summer</span>
+		</li>
+		<li>		
+			<span>Fall</span>
+		</li>
+		<li>		
+			<span>Winter</span>
+		</li>
+		<li>
+			<span>Spring</span>
+		</li>
+	</ul>
+	
+    <div class="parallax first-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact_form">
+                        <h3><i class="fa fa-envelope-o grd1 global-radius"></i> Schedule a FREE Visit  <b>Connect with us</b></h3>
+                        <form id="contactform1" class="row" name="contactform" method="post">
+                            <fieldset class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="first_name1" id="first_name1" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="last_name1" id="last_name1" class="form-control" placeholder="Last Name">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" name="email1" id="email1" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="phone1" id="phone1" class="form-control" placeholder="Your Phone">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label class="sr-only">Convenient Day</label>
+                                    <select name="select_service1" id="select_service1" class="selectpicker form-control" data-style="btn-white">
+                                        <option value="selecttime">Weekday/Weekend</option>
+                                        <option value="Weekdays">Weekdays</option>
+                                        <option value="Weekend">Weekend</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <label class="sr-only">Message</label>
+                                    <!-- Replaced the <select> element with an <input> element -->
+                                    <input type="text" name="custom_price1" id="custom_price1" class="form-control" placeholder="Any Message....">
+                                </div>
+                                    
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                    <button type="submit" value="SEND" id="submit1" class="btn btn-light btn-radius btn-brd grd1 btn-block">Send Message</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+				<div class="col-md-6 col-sm-12">
+                    <div class="big-tagline clearfix">
+                        <h2>BRIGADE ORCHIDS</h2>
+                        <p class="lead">Devanahalli, Bangalore</p>
+                        <p class="lead">An Award Winning 135 acre SMART TOWNSHIP <br> <em>Located just 10 minutes from the Airport</em></p>
+                        <a data-scroll href="#pg-gallery" class="btn btn-light btn-radius grd1 btn-brd">View Gallery</a>
+                        <a data-scroll href="#pg-location" class="btn btn-light btn-radius grd1 btn-brd">View Location</a>
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div class="about-box">
+		<div class="container">
+			<div class="row">
+				<div class="top-feature owl-carousel owl-theme">
+					<div class="item">
+						<div class="single-feature">
+							<div class="icon"><img src="uploads/icon-01.png" class="img-responsive" alt=""></div>
+							<h4><a href="#">135 Acre Smart Township</a></h4>
+							<p>Experience exceptional living in our celebrated 135-acre Smart Township, ranked among India's top 3 townships.</p>
+						</div> 
+					</div>
+					<div class="item">
+						<div class="single-feature">
+							<div class="icon"><img src="uploads/icon-02.png" class="img-responsive" alt=""></div>
+							<h4><a href="#">Living in Harmony with Nature</a></h4>
+							<p>Discover the serenity of residing amidst nature's embrace, where our homes seamlessly blend with lush landscapes to offer a harmonious living experience.</p>
+						</div> 
+					</div>
+					<div class="item">
+						<div class="single-feature">
+							<div class="icon"><img src="uploads/icon-03.png" class="img-responsive" alt=""></div>
+							<h4><a href="#">Luxurious Fittings</a></h4>
+							<p>Experience opulence like never before with our meticulously curated selection of luxurious fittings that redefine elegance and sophistication. </p>
+						</div> 
+					</div>
+					<div class="item">
+						<div class="single-feature">
+							<div class="icon"><img src="uploads/icon-04.png" class="img-responsive" alt=""></div>
+							<h4><a href="#">Non Stop Security</a></h4>
+							<p>Rest easy knowing that our unwavering commitment to non-stop security ensures your peace of mind around the clock. </p>
+						</div> 
+					</div>
+				</div>
+			</div>
+			
+			<hr class="hr1">
+			
+			<div id="pg-virtual" class="row">
+				<div class="col-md-6">
+                    <div class="post-media wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <img src="images/my/images/homepage_BrigadeOrchidTownshipImg.jpg" alt="" class="img-responsive">
+                        <a href="https://www.youtube.com/watch?v=E92j2ae11Qs&ab_channel=BrigadeGroup" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>                        
+                    </div><!-- end media -->
+                </div>
+				<div  class="col-md-6">
+					<div class="message-box right-ab">
+                        <h4>BRIGADE ORCHIDS - VIRTUAL VIDEO TOUR </h4>
+                        <h2>Brigade Orchids</h2>
+                        <p>Step into a realm of excellence and luxury at Brigade Orchids Township—an award-winning haven that features a world-class sports arena, a prestigious educational institution, vibrant office spaces, retail outlets, and an exclusive signature club resort.</p>
+						<p>Here, a life reimagined awaits, where the essence of convenience, luxury, and community thrives. <b>See it to believe it – your personal experience awaits.</b> </p>
+						<a href="#" class="btn btn-light btn-radius grd1 btn-brd"> Book Your Free Site-Visit </a>
+                    </div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+<!-- START CLUSTER CONFIGURATION -->
+
+<div id="pg-properties" class="container-clust">
+
+    <div class="container">
+      <h2 class="sppb-title-heading delay-10s  wow fadeInDown  animated cstm-head" style="visibility: visible; animation-name: fadeInDown;color: #88999c!important;">
+     CLUSTER CONFIGURATION</h2>
+    
+      <div style="width: 100%;height: 20px"></div>
+      <div class="row">
+    
+          <div class="latest-post col-sm-6">
+              <div class="prop-div">
+    
+                  <a class="move" onclick="pricePopProjectname('Brigade Orchards Ivory');">
+                      <div class="prop-img-div">
+                          <div id="carousel-example-generic2" class="carousel slide carousel-fade" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="item active">
+                                      <img src="images/my/images/1_ivory.jpg" alt="" class="">
+                                  </div>
+                              </div>
+    
+                          </div>
+                          
+                      </div>
+                  </a>
+                  <div class="prop-details">
+                      <div class="prop-inner">
+                          <!-- <p class="prop-title offer">
+                                      Offer
+                                  </p> -->
+                          <p class="prop-desc offer-desc">
+                            Brigade Orchards Ivory - Rs. 35 Lakh Onwards
+                          </p>
+                      </div>
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              Configuration
+                          </p>
+                          <p class="prop-desc">
+                              1, 2 &amp; 3 BHK
+                          </p>
+                      </div>
+    
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              Possession</p>
+                          <p class="prop-desc">
+                              Under Construction
+                          </p>
+                      </div>
+    
+                      <div class="prop-inner">
+                          <p class="prop-title"> Amenities </p>
+                          <p class="prop-desc">
+                              <a class="amiLink5 move">view</a>
+                          </p>
+                      </div>
+                      <div class="prop-inner viewamiDiv5">
+                          <p>Sports Complex with indoor &amp; outdoor sports, Swimming Pool, Kids Play Area,
+                              Landscape Island, Outdoor Gymnasium, Jogging Track, Party Lawn, Amphitheatre,
+                              Maze Garden, Skating Rink, Basketball Practice Court, Mini Forest</p>
+                      </div>
+    
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              For more details
+                          </p>
+                          <p class="prop-desc">
+                            <a class="move clickhere" href="#pg-home">click here</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    
+          <div class="latest-post col-sm-6">
+              <div class="prop-div">
+    
+                  <a class="move" onclick="pricePopProjectname('Brigade Orchards Apartment');">
+                      </a><div class="prop-img-div"><a class="move" onclick="pricePopProjectname('Brigade Orchards Apartment');">
+                          </a><div id="carousel-example-generic2" class="carousel slide carousel-fade" data-ride="carousel"><a class="move" onclick="pricePopProjectname('Brigade Orchards Apartment');">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="item active">
+                                      <img src="images/my/images/1_orchads.jpg" alt="" class="">
+                                  </div>
+                              </div>
+                              </a><a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+    
+                              </a>
+                              <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+                              </a>
+                          </div>
+                          
+                      </div>
+                  
+                  <div class="prop-details">
+                      <div class="prop-inner">
+                          <!-- <p class="prop-title offer">
+                                      Offer
+                                  </p> -->
+                          <p class="prop-desc offer-desc">
+                            Brigade Orchards Apartment - Rs. 62 Lakh Onwards
+                          </p>
+                      </div>
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              Configuration
+                          </p>
+                          <p class="prop-desc">
+                              2 &amp; 3 BHK
+                          </p>
+                      </div>
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              Possession</p>
+                          <p class="prop-desc">
+                              Ready to move in
+                          </p>
+                      </div>
+    
+                      <div class="prop-inner">
+                          <p class="prop-title"> Amenities </p>
+                          <p class="prop-desc">
+                              <a class="amiLink3 move">view</a>
+                          </p>
+                      </div>
+                      <div class="prop-inner viewamiDiv3">
+                          <p>Swimming Pool - 6 Lane, Indoor Heated Pool, Cricket Ground, Lawn Tennis Courts,
+                              Basketball Court, Volleyball Court, Table Tennis Room, Football Ground,
+                              Billiards/ Snooker Room, Yoga Terrace, Kids Play Areas, Amphitheatre, Cycling
+                              Track Across Township, Convenience Store, Conference Hall, Multi Cuisine
+                              Restaurant, State-of-the-art Gymnasium, Spa For Relaxation, Banquet Space For Up
+                              To 2000 Guests</p>
+                      </div>
+    
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              For more details
+                          </p>
+                          <p class="prop-desc">
+                            <a class="move clickhere" href="#pg-home">click here</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    
+      </div>
+      <div class="row">
+          <div class="latest-post col-sm-6">
+              <div class="prop-div">
+    
+                  <a class="move" onclick="pricePopProjectname('Brigade Orchards Goldspire');">
+                      <div class="prop-img-div">
+                          <div id="carousel-example-generic2" class="carousel slide carousel-fade" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="item active">
+                                      <img src="images/my/images/3_gold.jpg" alt="" class="">
+                                  </div>
+                              </div>
+    
+                          </div>
+                          
+                      </div>
+                  </a>
+                  <div class="prop-details">
+                      <div class="prop-inner">
+                          <!-- <p class="prop-title offer">
+                                      Offer
+                                  </p> -->
+                          <p class="prop-desc offer-desc">
+                            Brigade Orchards Goldspire - Rs. 45 Lakh Onwards
+                          </p>
+                      </div>
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              Configuration
+                          </p>
+                          <p class="prop-desc">
+                              1.5 &amp; 2 BHK
+                          </p>
+                      </div>
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              Possession</p>
+                          <p class="prop-desc">
+                              New Launch
+                          </p>
+                      </div>
+    
+                      <div class="prop-inner">
+                          <p class="prop-title"> Amenities </p>
+                          <p class="prop-desc">
+                              <a class="amiLink6 move">view</a>
+                          </p>
+                      </div>
+                      <div class="prop-inner viewamiDiv6">
+                          <p>Multipurpose Party Area, Indoor games, Library, Yoga / Fitness Terrace, Viewing
+                              Gallery, Barbeque area on the terrace</p>
+                      </div>
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              For more details
+                          </p>
+                          <p class="prop-desc">
+                            <a class="move clickhere" href="#pg-home">click here</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    
+          <div class="latest-post col-sm-6">
+              <div class="prop-div">
+    
+                  <a class="move" onclick="pricePopProjectname('Brigade Orchards Villa');">
+                      <div class="prop-img-div">
+                          <div id="carousel-example-generic2" class="carousel slide carousel-fade" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="item active">
+                                      <img src="images/my/images/4_villa.jpg" alt="" class="">
+                                  </div>
+                              </div>
+    
+                          </div>
+                          
+                      </div>
+                  </a>
+                  <div class="prop-details">
+                      <div class="prop-inner">
+                          <!-- <p class="prop-title offer">
+                                      Offer
+                                  </p> -->
+                          <p class="prop-desc  offer-desc">
+                            Brigade Orchards Villa - Rs. 4.56 Cr Onwards
+                          </p>
+                      </div>
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              Configuration
+                          </p>
+                          <p class="prop-desc">
+                              4 Bedroom Villas
+                          </p>
+                      </div>
+    
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              Possession</p>
+                          <p class="prop-desc">
+                              Ready to move in
+                          </p>
+                      </div>
+    
+                      <div class="prop-inner">
+                          <p class="prop-title"> Amenities </p>
+                          <p class="prop-desc">
+                              <a class="amiLink4 move">view</a>
+                          </p>
+                      </div>
+                      <div class="prop-inner viewamiDiv4">
+                          <p>Banquet Space, Gymnasium, Swimming Pool, Indoor Heated Pool, Kids Play Areas,
+                              Amphitheatre, Cycling Track, Cricket Practice Pitches, Basketball Court</p>
+                      </div>
+    
+    
+                      <div class="prop-inner">
+                          <p class="prop-title">
+                              For more details
+                          </p>
+                          <p class="prop-desc">
+                            <a class="move clickhere" href="#pg-home">click here</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    
+
+<!-- END CLUSTER CONFIGURATION -->
+
+
+
+
+
+
+
+
+
+    <div class="parallax section db parallax-off" style="background-image:url('uploads/parallax_02.png');">
+        <div id="pg-about" class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>BRIGADE ORCHARDS</h3>
+                    <p class="lead">Brigade Orchards is a Smart Township that will revolutionize the urban lifestyle by integrating more than just the ordinary into a single enclave. This is sure to change the way Bangaloreans live today. Brigade Orchards has Residences, School, a Proposed Hospital, Office & Retail, apart from a host of sports and recreation amenities.<b> Just 10-minutes away from the Bangalore International airport</b>,  Brigade Orchards is strategically located away from the road and air-traffic related noise and pollution.</p>
+                </div><!-- end col -->
+            </div><!-- end title -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h4>About Us</h4>
+                        <h2>BRIGADE GROUP</h2>
+                        <p class="lead">The Brigade Group is one of India’s leading property developers with over three and a half decades of expertise in crafting exceptional residences and pioneering commercial developments.</p>
+
+                        <p> Instituted in 1986, the company has developed many landmark buildings and transformed the skyline of cities across South India, namely – Bengaluru, Mysuru, Mangaluru, Chikmagalur, Hyderabad, Chennai, and Kochi – as well as in GIFT City, Gandhinagar, Gujarat with developments across the Residential, Commercial, Retail, Hospitality and Education sectors.</p>
+
+                        <a href="#pg-contact" data-scroll class="btn btn-light global-radius btn-brd grd1 effect-1">Contact Us</a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				<div class="col-md-5">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/my/images/BridageLogo.jpg" alt="" class="img-responsive">
+                        <a href="https://www.youtube.com/watch?v=K0UjE_0la88&ab_channel=BrigadeGroup" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                    </div><!-- end media -->
+                </div><!-- end col -->
+                <!-- <div class="col-md-3">
+                    <div class="agencies_meta clearfix">
+                        <span><i class="fa fa-envelope "></i> <a href="mailto:support@sitename.com">support@sitename.com</a></span>
+                        <span><i class="fa fa-link "></i> <a href="#">www.sitename.com</a></span>
+                        <span><i class="fa fa-phone-square "></i> +1 232 444 55 66</span>
+                        <span><i class="fa fa-print "></i> +1 232 444 55 66</span>
+                        <span><i class="fa fa-facebook-square "></i> <a href="#">facebook.com/tagline</a></span>
+                        <span><i class="fa fa-twitter-square "></i> <a href="#">twitter.com/tagline</a></span>
+                        <span><i class="fa fa-linkedin-square "></i> <a href="#">linkedin.com/tagline</a></span>
+                    </div>
+                </div> -->
+            </div><!-- end row -->
+        </div>
+    </div>
+
+<!-- GALLERY PAGE START -->
+
+
+<div id="pg-gallery" class="section wb">        
+    <div class="container">
+        <div class="section-title row text-center">
+            <div class="col-md-8 col-md-offset-2">
+                <h3 style="font-size: xx-large">PROPERTY GALLERY - BRIGADE ORCHIDS</h3>
+                <p class="lead">Explore the stunning visuals that capture the luxury, green spaces, and exceptional amenities that define life at Brigade Orchids.</p>
+            </div><!-- end col -->
+        </div><!-- end title -->
+
+        <div id="da-thumbs" class="da-thumbs portfolio">
+            <div class="post-media_g pitem item-w1 item-h1 cat1">
+                <a href="images/my/images/gal/ext/1one.jpg" data-rel="prettyPhoto[gal]">
+                    <img src="images/my/images/gal/ext/1one.jpg" alt="" class="img-responsive">
+                    <div>
+                        <i class="flaticon-unlink"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="post-media_g pitem item-w1 item-h1 cat2">
+                <a href="images/my/images/gal/ext/2two.jpg" data-rel="prettyPhoto[gal]">
+                    <img src="images/my/images/gal/ext/2two.jpg" alt="" class="img-responsive">
+                    <div>
+                        <i class="flaticon-unlink"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="post-media_g pitem item-w1 item-h1 cat1">
+                <a href="images/my/images/gal/ext/3three.jpg" data-rel="prettyPhoto[gal]">
+                    <img src="images/my/images/gal/ext/3three.jpg" alt="" class="img-responsive">
+                    <div>
+                        <i class="flaticon-unlink"></i>
+                    </div>
+                </a>
+            </div>
+
+            <div class="post-media_g pitem item-w1 item-h1 cat3">
+                <a href="images/my/images/gal/ext/4four.jpg" data-rel="prettyPhoto[gal]">
+                    <img src="images/my/images/gal/ext/4four.jpg" alt="" class="img-responsive">
+                    <div>
+                        <i class="flaticon-unlink"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="post-media_g pitem item-w1 item-h1 cat2">
+                <a href="images/my/images/gal/ext/5five.jpg" data-rel="prettyPhoto[gal]">
+                    <img src="images/my/images/gal/ext/5five.jpg" alt="" class="img-responsive">
+                    <div>
+                        <i class="flaticon-unlink"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="post-media_g pitem item-w1 item-h1 cat1">
+                <a href="images/my/images/gal/ext/6six.jpg" data-rel="prettyPhoto[gal]">
+                    <img src="images/my/images/gal/ext/6six.jpg" alt="" class="img-responsive">
+                    <div>
+                        <i class="flaticon-unlink"></i>
+                    </div>
+                </a>
+            </div>
+        </div><!-- end portfolio -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
+
+<!-- GALLERY PAGE END -->
+
+
+<div id="testimonials" class="section lb ">
+    <div class="container">
+        <div class="section-title row text-center">
+            <div class="col-md-8 col-md-offset-2">
+                <h3 style="font-size:xx-large;">ELEVATED LIVING WITH SIGNATURE AMENITIES</h3>
+                <p class="lead">Discover a realm of exceptional community features that enrich daily living, with our world-class sports arena, exclusive signature club, top-tier school, and integrated office and retail spaces, all seamlessly woven into the fabric of Brigade Orchids.</p>
+            </div><!-- end col -->
+        </div><!-- end title --> 
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="testi-carousel owl-carousel owl-theme">
+                    <div class="testimonial clearfix">
+                        <div class="desc">
+                            <h3 style="font-size: large;"><i class="fa fa-quote-left"></i> World-Class Sports Arena <i class="fa fa-quote-right"></i></h3>								
+                        </div>
+                        <div class="testi-meta">
+                            <img src="images/my/images/gal/1sports-arena.jpg" alt="" class="img-responsive alignleft">
+                        </div>
+                        <!-- end testi-meta -->
+                    </div>
+                    <!-- end testimonial -->
+
+                    <div class="testimonial clearfix">
+                        <div class="desc">
+                            <h3 style="font-size:large;"><i class="fa fa-quote-left"></i> Signature Club Resort <i class="fa fa-quote-right"></i></h3>
+                        </div>
+                        <div class="testi-meta">
+                            <img src="images/my/images/gal/2-club.png" alt="" class="img-responsive alignleft">
+                        </div>
+                        <!-- end testi-meta -->
+                    </div>
+                    <!-- end testimonial -->
+
+                    <div class="testimonial clearfix">
+                        <div class="desc">
+                            <h3 style="font-size: medium;"><i class="fa fa-quote-left"></i> School - Brigade Orchards <i class="fa fa-quote-right"></i></h3>
+                        </div>
+                        <div class="testi-meta">
+                            <img src="images/my/images/gal/3-school.jpg" alt="" class="img-responsive alignleft">
+                        </div>
+                        <!-- end testi-meta -->
+                    </div>
+                    <!-- end testimonial -->
+                    <div class="testimonial clearfix">
+                        <div class="desc">
+                            <h3 style="font-size: large;"><i class="fa fa-quote-left"></i> Office & Retail <i class="fa fa-quote-right"></i></h3>
+                            
+                        </div>
+                        <div class="testi-meta">
+                            <img src="images/my/images/gal/4-office.jpg" alt="" class="img-responsive alignleft">
+                            
+                        </div>
+                        <!-- end testi-meta -->
+                    </div>
+                    <!-- end testimonial -->
+
+                        <!-- end testi-meta -->
+                    </div><!-- end testimonial -->
+                </div><!-- end carousel -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
+
+<div id="pg-location" class="section wb">
+    <div class="container col-md-8 col-md-offset-2">
+        
+        <div class="section-title row text-center">
+        <h3 style="font-size: xx-large">Brigade Orchards Location</h1>
+        <p class="lead">Just 10-minutes away from the Bangalore International airport, Brigade Orchards is strategically located away from the road and air-traffic related noise and pollution. North Bangalore is also witnessing a never-before focus since it is located in the middle of the Aerotropolis region. A six-lane highway from Hebbal to Devanahalli already links the airport to the city which makes commute from Brigade Orchards to Hebbal / Whitefield a mere 30-45 minutes drive.</p>
+        </div>
+
+        <div id="da-thumbs" class="da-thumbs portfolio">
+        <img src="images/my/images/gal/orchards-location.jpg">
+        </div>
+
+        <div class="section wb" style="display: flex; justify-content: center; align-items: center;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.8111981085285!2d77.72193711482478!3d13.23716219068204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1d6a607bee43%3A0x41105d60db4a0c74!2sBrigade+Orchards!5e0!3m2!1sen!2sin!4v1480070140208" frameborder="0" allowfullscreen="" > </iframe>
+        </div>
+
+     </div>
+        
+</div>
+
+ 
+
+      
+
+</div>
+
+
+
+
+    <footer id="pg-contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <img src="images/my/logos/Logo_SpaceDraw_Transparent_ForBlackBG.png" alt="" width="55%" >
+                        </div>
+                        <p> Welcome to Space Draw Properties, your trusted destination for premium real estate. As the authorized channel partner of <b>Brigade Group</b>, a renowned name in the world of real estate development, we bring you exclusive access to the finest properties crafted by the <b>Brigade Group</b>.</p>
+                        <p>With our expert guidance and extensive portfolio, we're dedicated to helping you find your dream home.</p>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Info Link</h3>
+                        </div>
+
+                        <ul class="twitter-widget footer-links">
+                            <li><a href="#pg-home"> Home </a></li>
+                            <li><a href="#pg-about"> About Us </a></li>
+                            <li><a href="#pg-properties"> Properties</a></li>
+							<li><a href="#pg-virtual"> Virtual Site Tour</a></li>
+                            <li><a href="#pg-gallery"> Gallery</a></li>
+							<li><a href="#pg-contact"> Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+				<div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@yoursite.com</a></li>
+                            <li><a href="#">www.yoursite.com</a></li>
+                            <li>Bangalore Address</li>
+                            <li>+91-9867755916</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Social</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                            <!-- <li><a href="#"><i class="fa fa-github"></i> Github</a></li> -->
+                            <li><a href="https://twitter.com/spacedrawprop" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                            <!-- <li><a href="#"><i class="fa fa-dribbble"></i> Dribbble</a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li> -->
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#pg-about">Brigade Group</a> Design By : <a href="#">Mannil Designs</a></p>
+                </div>
+
+                <div class="footer-right">
+                    <form method="get" action="#">
+                        <input placeholder="Subscribe our newsletter.." name="search">
+                        <i class="fa fa-envelope-o"></i>
+                    </form>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <script>
+        const form = document.querySelector("#contactform1")
+        const submitButton = document.querySelector("#submit1")
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyY9dNsGgdhrbeIs1jqxRahWcVRBsgRAhVlVJvJr4tT0yjpkrk2R-_S0ayP2QbO_1WPPA/exec'
+     
+        form.addEventListener('submit', e => {
+          submitButton.disabled = true
+          e.preventDefault()
+          let requestBody = new FormData(form)
+          fetch(scriptURL, { method: 'POST', body: requestBody})
+            .then(response => {
+               alert('Success!', response)
+               submitButton.disabled = false
+               document.getElementById("contactform1").reset();
+              })
+            .catch(error => {
+            alert('Error!', error.message)
+              submitButton.disabled = false
+     
+            }
+            )
+        })
+     </script>
+
+
+    
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <!-- <script src="js/portfolio.js"></script>
+    <script src="js/hoverdir.js"></script>      -->
+    <!-- <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script> -->
+   <!-- MAP & CONTACT -->
+    <!-- <script src="js/map.js"></script> -->
+    
+</body>
+</html>
